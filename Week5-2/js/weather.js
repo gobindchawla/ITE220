@@ -10,7 +10,7 @@ window.onload = function() {
 					//alert("bangkok is clicked");
 					$.ajax({
 						type: "GET",
-						url : "http://api.openweathermap.org/data/2.5/weather?q=bangkok&appid=55d193b8cc97a9dfba634b0c0297f27a",
+						url : "http://api.openweathermap.org/data/2.5/weather?q=bangkok&units=metric&appid=55d193b8cc97a9dfba634b0c0297f27a",
 						success: function(data) {
 							console.log(data);
 							// alert(data.main.temp);
@@ -28,7 +28,7 @@ window.onload = function() {
 
 
 							var temp = document.getElementById("temp");
-							temp.textContent = data.main.temp - 273.15;
+							temp.textContent = data.main.temp
 							
 						}
 
@@ -45,7 +45,7 @@ window.onload = function() {
 			london.addEventListener("click", function() { 
 					$.ajax({
 						type: "GET",
-						url : "http://api.openweathermap.org/data/2.5/weather?q=london&appid=55d193b8cc97a9dfba634b0c0297f27a",
+						url : "http://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=55d193b8cc97a9dfba634b0c0297f27a",
 						success: function(data) {
 							console.log(data);
 							// alert(data.main.temp);
@@ -63,7 +63,7 @@ window.onload = function() {
 
 
 							var temp = document.getElementById("temp");
-							temp.textContent = data.main.temp - 273.15;
+							temp.textContent = data.main.temp
 
 						}
 
@@ -79,7 +79,7 @@ window.onload = function() {
 						seoul.addEventListener("click", function() { 
 					$.ajax({
 						type: "GET",
-						url : "http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=55d193b8cc97a9dfba634b0c0297f27a",
+						url : "http://api.openweathermap.org/data/2.5/weather?q=seoul&units=metric&appid=55d193b8cc97a9dfba634b0c0297f27a",
 						success: function(data) {
 							console.log(data);
 							// alert(data.main.temp);
@@ -97,7 +97,7 @@ window.onload = function() {
 
 
 							var temp = document.getElementById("temp");
-							temp.textContent = data.main.temp - 273.15;
+							temp.textContent = data.main.temp
 														
 						}
 
